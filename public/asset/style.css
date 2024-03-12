@@ -1,0 +1,66 @@
+main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+li {
+    list-style: none;
+}
+
+header{
+    border-radius: 10px !important;
+    position: sticky;
+}
+.border-nav{
+    border-radius: 10px !important;
+}
+.btn-custom1{
+    background-color: coral ;
+    
+}
+.btn-custom1:hover{
+    background-color: goldenrod !important;
+}
+.card-img-top{
+    height: 150px;
+    width: 100px;
+    justify-content: center;
+    margin: auto;
+}
+h4{
+    color: #000 !important;
+    font-weight: bolder;
+}
+.price{
+    color: red;
+    font-weight: bold;
+    padding: 1rem 1rem;
+}
+.doitra{
+    font-size: 13px;
+}
+.btn-addcart{
+    background-color: #fff !important;
+    color: red !important;
+    height: 40px;
+    font-size: 13px;
+    border-radius: 10px;
+}
+.btn-buynow{
+    background-color: coral;
+    color: #fff;
+    height: 40px;
+    font-size: 13px;
+    border-radius: 10px;
+}
+.product-input-count{
+    width: 40px;
+    margin: auto 0px;
+}
+.thanhtoan{
+    border-radius: 10px;
+    background-color: rgb(135, 36, 255);
+}
+body {
+    background-color: #cacaca ;
+}
+
+ 

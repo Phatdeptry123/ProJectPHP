@@ -1,0 +1,43 @@
+case 'addbook':
+            # code...
+            if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
+                $ten_book = $_POST['ten_book'];
+                insert_book($ten_book);
+                $thongbao = "them thanh cong";
+            }
+            include "./book/add.php";
+            break;
+
+
+        case 'listbook':
+            $listbook = loadall_book();
+            include "./book/list.php";
+            break;
+
+        case 'xoabook':
+            echo "33";
+            if (isset($_GET['id_book']) && ($_GET['id_book'] > 0)) {
+                delete_book($_GET['id_book']);
+            }
+            $listbook = loadall_book();
+            include "./book/list.php";
+            break;
+
+
+        case 'suabook':
+            if (isset($_GET['id_book']) && ($_GET['id_book'] > 0)) {
+                $dm = loadone_book($_GET['id_book']);
+            }
+            include "./book/update.php";
+            break;
+
+        case 'updatebook':
+            if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
+                $ten_book = $_POST['ten_book'];
+                $id_book = $_POST['id_book'];
+                update_book($id_book, $ten_book);
+                $thongbao = "Cap nhat thanh cong";
+            }
+            $listbook = loadall_book();
+            include "./book/list.php";
+            break;
